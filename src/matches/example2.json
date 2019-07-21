@@ -1,0 +1,45 @@
+{
+	"title": "",
+	"players": [
+		{
+			"name": "",
+			"image": "",
+			"winner": bool,
+			"loser": bool,
+			"country": {
+				"code": "",
+				"name": ""
+			},
+			"sets": int
+		},
+		"player2": {
+			"name": "",
+			"image": "",
+			"winner": bool,
+			"loser": bool,
+			"country": {
+				"code": "",
+				"name": ""
+			},
+			"sets": int
+		}
+	],
+	"sets": [
+		{
+			"score": [int, int]
+			"games": [
+				{
+					"score": [int, int]
+					"actions": [
+						{
+							"time": "0:00:00"
+							"type": "score",
+							"by": "p1",
+							"score": [int, int]
+						}
+					]
+				}
+			]
+		}
+	]
+}

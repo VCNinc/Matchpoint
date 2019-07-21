@@ -1,0 +1,49 @@
+[{
+    "name": "Default",
+    "last": "Default",
+    "image": "player-gray.png",
+    "country": {
+        "code": "US",
+        "name": "United States"
+    }
+}, {
+    "name": "Rafael Nadal",
+    "last": "Nadal",
+    "image": "nadal.jpg",
+    "country": {
+        "code": "ES",
+        "name": "Spain"
+    }
+}, {
+    "name": "Roger Federer",
+    "last": "Federer",
+    "image": "federer.jpg",
+    "country": {
+        "code": "CH",
+        "name": "Switzerland"
+    }
+}, {
+    "name": "Novak Djokovic",
+    "last": "Djokovic",
+    "image": "djokovic.jpg",
+    "country": {
+        "code": "RS",
+        "name": "Serbia"
+    }
+}, {
+    "name": "Naomi Osaka",
+    "last": "Osaka",
+    "image": "osaka.jpg",
+    "country": {
+        "code": "JP",
+        "name": "Japan"
+    }
+}, {
+    "name": "Serena Williams",
+    "last": "Williams",
+    "image": "williams.jpg",
+    "country": {
+        "code": "US",
+        "name": "United States"
+    }
+}]

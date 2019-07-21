@@ -1,0 +1,114 @@
+.country-flag img {
+    margin-top: -11px;
+}
+
+.selected--flag--option .country-flag img {
+    transform: translate(-4px, -6px);
+    margin-right: -4px;
+    margin-top: 0;
+}
+
+.flag-options {
+    left: 0;
+    right: 0;
+    margin-top: 16px !important;
+    padding: 8px !important;
+}
+
+.filterBox input {
+    margin: 0 !important;
+    width: 100% !important;
+    margin-bottom: 4px !important;
+    border-radius: 4px;
+    padding-left: 6px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.simple-modal .img-select {
+	font-size: 0;
+}
+
+.img-select .player-img {
+    transform: none;
+    position: static;
+    text-align: left;
+    display: inline-block;
+    border-radius: 0;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.img-select .player-img.active {
+	position: relative;
+	left: 0;
+    font-size: 16px;
+}
+
+.scroll-h {
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 8px;
+}
+
+.player-img.active .check {
+	position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    color: #FFF;
+    padding: 0px 3px;
+}
+
+.player-img.active .check svg {
+    transform: translateY(-2px);
+}
+
+.img-data {
+	display: inline-block;
+	margin-left: 16px;
+	transform: translateY(-16px);
+	margin-bottom: -16px;
+}
+
+.simple-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	background: rgba(0,0,0,0);
+	transition: 0.3s ease-in-out background;
+	pointer-events: none;
+}
+
+.simple-modal.in {
+	background: rgba(0,0,0,0.5);
+	pointer-events: all;
+}
+
+.simple-modal .simple-modal-dialog {
+	position: fixed;
+	top: -100%;
+	left: 32px;
+	right: 32px;
+	min-height: 100px;
+	background: #EEE;
+	z-index: 101;
+	border-radius: 16px;
+	padding: 32px;
+	transition: 0.3s ease-in-out top;
+	max-height: calc(100vh - 64px);
+	overflow-y: scroll;
+}
+
+.simple-modal.in .simple-modal-dialog {
+	top: 32px;
+}

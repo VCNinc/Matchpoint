@@ -1,0 +1,338 @@
+.navbar-dark .navbar-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.87);	
+}
+
+.navbar {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.jumbotron {
+	position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 0;
+    margin-bottom: 16px;
+}
+
+.profile {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.player {
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+}
+
+.player p.name {
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.player.p2 {
+	float: right;
+}
+
+.player .flag {
+	margin-top: -3px;
+	margin-right: 2px;
+}
+
+.player p.country {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.vs {
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    top: 155px;
+}
+
+.vs-text {
+	color: #212529;
+    font-size: 26px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #212529;
+    padding: 0;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    z-index: 5;
+    background: #e9ecef;	
+}
+
+.vs-line {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 2px;
+	background: #212529;
+	transform: translate(-50%, -50%);
+	z-index: -2;
+}
+
+.player.loser {
+	opacity: 0.4;
+}
+
+.winner {
+	background-color: gold;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #FFF;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	padding-top: 6px;
+}
+
+.next-icon, .prev-icon {
+	color: #000;
+}
+
+.carousel-control-prev {
+    left: -24px;
+}
+
+.carousel-control-next {
+    right: -24px;
+}
+
+.set-card {
+    margin: 0 20px;
+    text-align: left;
+}
+
+.carousel .slide {
+	background: none !important;
+}
+
+.carousel .control-next.control-arrow:before {
+    margin-right: -5px !important;
+    border-left-color: #000 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    margin-left: -5px !important;
+    border-right-color: #000 !important;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+	background: none !important;
+}
+
+.set-table {
+	font-size: 12px;
+}
+
+.set-table td, .set-table th {
+    padding: 1px !important;
+    text-align: center !important;
+}
+
+.set-table, .set-table thead, .set-table th {
+	border: none;
+}
+
+.card-text .badge {
+    transform: translateY(-1px);
+    margin-right: 1px;
+    text-transform: uppercase;
+}
+
+.card-text {
+	margin-bottom: 0;
+	position: relative;
+}
+
+.card-text .game-table {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.set-table.game-table {
+	width: auto;
+}
+
+.set-table.game-table td, .set-table.game-table th {
+    padding: 1px 8px !important;
+    text-align: center !important;
+    border: 1px solid #dee2e6;
+}
+
+.card-text .set-table.game-table {
+	width: 70px;
+	table-layout: fixed;
+	margin-bottom: 0;
+}
+
+.pt {
+    margin-top: 16px !important;
+    display: block;
+}
+
+.scrollable {
+    height: 0px;
+    overflow-y: scroll;
+    padding-right: 16px;
+    flex-grow: 1;
+}
+
+.match-table {
+	padding: 0 20px;
+}
+
+.match-table .set-table {
+	font-size: 16px;
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.match-table .set-table .b0 {
+    border: none !important;
+    text-align: left !important;
+    padding-right: 16px !important;
+    padding-left: 0 !important;
+    width: 1%;
+}
+
+.selector {
+	position: relative;
+	opacity: 0;
+    transition: 0.3s linear opacity;
+}
+
+.selector.active {
+	opacity: 1;
+}
+
+.select {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    width: 100%;
+    bottom: 0;
+    height: 200%;
+    background: #000;
+    padding-left: 1px;
+    padding-bottom: 3px;
+    padding-right: 1px;
+    box-sizing: content-box;
+    opacity: 0.1;
+}
+
+#root {
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+}
+
+#root .container, .flex-h, .react-swipeable-view-container, .react-swipeable-view-container > div, .set-card.card .card-body, .slides, #root > .fsha {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+}
+
+.set-card.card {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+    margin-bottom: 32px;
+}
+
+.scrollable small {
+    margin-top: -6px;
+    display: block;
+}
+
+.card-body > .set-table {
+	margin-bottom: 22px;
+}
+
+.profile .score {
+	margin: 0;
+	padding: 0;
+	font-size: 42px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.p1 .profile .score {
+	left: 115px;
+}
+
+.p2 .profile .score {
+	right: 115px;
+}
+
+.slides {
+	position: relative;
+}
+
+.slides .next-icon, .slides .prev-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 12px;
+    width: 35px;
+    height: 35px;
+    z-index: 10;
+}
+
+.slides .next-icon {
+    right: -15px;
+}
+
+.slides .prev-icon {
+    left: -15px;
+}
+
+.next-icon.disabled, .prev-icon.disabled {
+	opacity: 0.2;
+}
+
+.match-card {
+	margin-bottom: 16px;
+	color: #212529;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}

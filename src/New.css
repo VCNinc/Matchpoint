@@ -1,0 +1,58 @@
+.winner.edit {
+	background-color: #2196F3;
+}
+
+form {
+    margin: 0 20px;
+}
+
+.c-option {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 8px;
+    border: 3px solid #FFF;
+    position: relative;
+}
+
+.c-option.active {
+	border-color: #448AFF;
+}
+
+.c-option .selected {
+	position: absolute;
+	right: -4px;
+	bottom: 0;
+	width: 16px;
+	height: 16px;
+	background: #448AFF;
+	color: #FFF;
+	border-radius: 50%;
+	font-size: 10px;
+	display: none;
+}
+
+.c-option.active .selected {
+	display: block;
+}
+
+.c-option .selected svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 1px;
+}
+
+.c-option span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.c-option.bg {
+	background: #EEE;
+}

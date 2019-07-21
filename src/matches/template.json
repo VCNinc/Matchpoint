@@ -1,0 +1,50 @@
+{
+	"title": "{Title of the match, eg. 2008 Wimbledon Finals}",
+	"players": [
+		{
+			"name": "{Name of the first player, eg. Rafael Nadal}",
+			"image": "{Link to profile image of the first player}",
+			"winner": bool, // true | false - did they win the match?
+			"loser": bool, // true | false - did they lose the match?
+			"country": {
+				"code": "{Country code, eg. ES}",
+				"name": "{Country name, eg. Spain}"
+			},
+			"sets": int // number of sets that this player won
+		},
+		"player2": {
+			"name": "{Name of the second player, eg. Roger Federer}",
+			"image": "{Link to profile image of the second player}",
+			"winner": bool, // true | false - did they win the match?
+			"loser": bool, // true | false - did they lose the match?
+			"country": {
+				"code": "{Country code, eg. CH}",
+				"name": "{Country name, eg. Switzerland}"
+			},
+			"sets": int // number of sets that this player won
+		}
+	],
+	"sets": [
+		{ // This represents the first set
+			"score": [int, int] // The number of games won by each player
+								// in this set (eg. [6, 1]).
+			"games": [
+				{ // This represents the first game
+					"score": [int, int] // The number of points won by each player
+										// in this game (eg. [15, 42])
+										// 42 = set winner
+					"actions": [
+						{ // This represents the first action
+							"time": "{eg. 1:15:35}"
+							"type": "{score | ace | out | fault | etc. (eg. challenge) - what happened}",
+							"by": "{p1 | p2 - who took that action}",
+							"score": [int, int] // The game score after that action was taken
+												// eg. [40, 30] or [40, 41] or [30, 42]
+												// 41 = advantage, 42 = set winner
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,30 @@
+.home .navbar-brand img {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .jumbotron {
+	padding-left: 28px;
+	padding-right: 28px;
+	margin-bottom: 32px;
+}
+
+.home {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+}
+
+.home .jumbotron.mod {
+    padding: 0;
+    margin: 0;
+    background: none;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.home .jumbotron.mod .vs {
+    top: 82px;
+}
